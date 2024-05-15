@@ -17,12 +17,11 @@
 
             var paisres = window.document.getElementById('pais')
             var res = window.document.getElementById('res')
-            var paiss = paisres
-            innerHTML = `voce nasceu em ${paiss}`
+            innerHTML = `voce nasceu em ${paisres}`
             if (pais == 'Brasil') {
-            res.innerHTML = `Você é Brasileiro!`
+            res.innerHTML += `Você é Brasileiro!`
             } else {
-                res.innerHTML = `Você é Estrangeiro!`
+                res.innerHTML += `Você é Estrangeiro!`
             }
             
         }
