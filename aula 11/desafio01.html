@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio</title>
+</head>
+<body>
+    <h1>Você é Brasileiro</h1>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        var paisres = window.document.getElementById('pais')
+
+        function verificar() {
+
+            var paisres = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+            var paiss = paisres
+            innerHTML = `voce nasceu em ${paiss}`
+            if (pais == 'Brasil') {
+            res.innerHTML = `Você é Brasileiro!`
+            } else {
+                res.innerHTML = `Você é Estrangeiro!`
+            }
+            
+        }
+    </script>
+</body>
+</html>
