@@ -1,0 +1,8 @@
+elemetos comuns com mause
+
+mouseenter: dispara quando o mause entra na div
+mousemove: dispara quando o mause se move dentro da div
+mousedown: dispara quando se clica dentro da div e segura
+mouseup: dispara quando solta o click do mause dentro da div
+click: dispara quando faz um click dentro da div
+mouseout: dispara quando se tira o mause de dentro da div
