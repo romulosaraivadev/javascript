@@ -7,24 +7,23 @@
 </head>
 <body>
     <h1>Você é Brasileiro</h1>
-    <input type="text" name="pais" id="pais">
+    Onde voce nasceu? <input type="text" name="pais" id="pais">
     <input type="button" value="verificar" onclick="verificar()">
     <div id="res"></div>
     <script>
-        var paisres = window.document.getElementById('pais')
-
         function verificar() {
-
             var paisres = window.document.getElementById('pais')
             var res = window.document.getElementById('res')
-            innerHTML = `voce nasceu em ${paisres}`
-            if (pais == 'Brasil') {
-            res.innerHTML += `Você é Brasileiro!`
-            } else {
-                res.innerHTML += `Você é Estrangeiro!`
-            }
+
+            var paistxt = String(paisres.value)
+            res.innerText = `Seu pais é ${paistxt}`
+            if(paistxt == 'Brasil'){
+                res.innerHTML = 'Você é Brasileiro'
+            }else(
+                res.innerHTML = 'Você é estrangeiro'
+            )
+         }
             
-        }
     </script>
 </body>
 </html>
